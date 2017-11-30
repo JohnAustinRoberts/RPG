@@ -1,0 +1,29 @@
+body, html {
+	height: 100%;
+}
+
+body {
+	background-image: url('../images/bookshelfBackground.jpeg');
+	height: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.contentDiv {
+	border-style: double;
+	border-width: 5px;
+	border-color: black;
+	height: 600px;
+	width: 70%;
+	margin: auto;
+}
+
+.rightPage {
+	margin-top: auto;
+}
+.buttonDiv {
+	align-content: center;
+
+}

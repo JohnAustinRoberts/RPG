@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>A Knights Quest</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body style="background-image: url('assets/images/library.jpeg');
+	height: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover">
+
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">R.P.G.</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bookshelf<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="aKnightsTale.html">A Knight's Tale</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="aGoblinInvasion.html">A Goblin Invasion</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="sailingAroundTheWorld.html">Sailing Around the World</a></li>s
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../../../index.html">Log In</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<div class="contentDiv" align="center" style="background-color: #ffffe6; margin: auto; width:800px; height:600px;">
+		<div>
+		<h1 style="font-size:40px;">Ripshog Publishing Group</h1>
+		<h2 style="font-size:20px;">A Library of Click Your Own Adventures, Novels, and Short Stories</h2>
+		<svg width="700" height="700">
+			<!--Bookshelf Body -->
+			<!--Bookshelf outline -->
+			<rect width="300" height="400" x="200" y="75" style="fill:#b35900;stroke-width:3;stroke:rgb(0,0,0)" />
+			<!--Left Foot -->
+			<rect width="30" height="10" x="200" y="475" style="fill:#4d2600;stroke-width:3;stroke:rgb(0,0,0)" />
+			<!--Right Foot -->
+			<rect width="30" height="10" x="470" y="475" style="fill:#4d2600;stroke-width:3;stroke:rgb(0,0,0)" />
+			<!--Top Bookshelf-->
+			<rect width="280" height="80" x="210" y="85" style="fill:#804000;stroke-width:2;stroke:rgb(0,0,0)" />
+			<!--Middle Bookshelf-->
+			<rect width="280" height="80" x="210" y="175" style="fill:#804000;stroke-width:2;stroke:rgb(0,0,0)" />
+			<!--Bottom Bookshelf-->
+			<rect width="280" height="80" x="210" y="265" style="fill:#804000;stroke-width:2;stroke:rgb(0,0,0)" />
+			
+
+			<!--Drawers-->
+			<!--Left Drawer-->
+			<rect width="125" height="70" x="210" y="375" style="fill:#b35900;stroke-width:2;stroke:rgb(0,0,0)" />
+			<!--Right Drawer-->
+			<rect width="125" height="70" x="365" y="375" style="fill:#b35900;stroke-width:2;stroke:rgb(0,0,0)" />
+			<!--Left Drawer Knob-->
+			<circle cx="272.5" cy="410" r="5" stroke="black" stroke-width="3" fill="red" />
+			<!--Right Drawer Knob-->
+			<circle cx="427.5" cy="410" r="5" stroke="black" stroke-width="3" fill="red" />
+			
+
+			<!--Top Bookshelf Books -->
+			<!--First book on Top Shelf-->
+			<rect width="20" height="60" x="212" y="105" style="fill:#6699ff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Knights Tale Label-->
+			<a href="assets/html/knightsTale/titlePage.html"><text x="212" y="105" transform="rotate(90,210,110)">Knights</text></a>
+			<!--Second book on Top Shelf-->
+			<rect width="20" height="60" x="232" y="105" style="fill:#cccc00;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Second book decorative top stripe-->
+			<line x1="233" y1="115" x2="251" y2="115" style="stroke:#ddffcc;stroke-width:2" />
+			<!--Second book decorative bottom stripe-->
+			<line x1="233" y1="155" x2="251" y2="155" style="stroke:#ddffcc;stroke-width:2" />
+			<!--Goblins Label-->
+			<text x="132" y="205" transform="rotate(90,231,211)">Goblins</text>
+			<!--Third book on the Top Shelf-->
+			<rect width="13" height="60" x="253" y="105" style="fill:#ff80ff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Maze Label-->
+			<text x="153" y="105" transform="rotate(90,200,159)">Mazes</text>
+			<!--Fourth book on Top Shelf-->
+			<rect width="20" height="60" x="252" y="105" transform="rotate(-45,279,95)" style="fill:#ff8080;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Pirates Label-->
+			<text x="252" y="105" transform="rotate(45,240,143)">Pirates</text>
+			
+			
+			<!--Second Bookshelf Books-->
+			<!--First book second shelf -->
+			<rect width="20" height="60" x="212" y="195" style="fill:#cc6600;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Fourth book second shelf -->
+			<rect width="20" height="60" x="232" y="195" style="fill:#ff8080;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Third book second shelf -->
+			<rect width="20" height="60" x="252" y="195" style="fill:#6600ff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Fourth book second shelf -->
+			<rect width="20" height="60" x="272" y="195" style="fill:#b300b3;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Fifth book second shelf -->
+			<rect width="20" height="60" x="292" y="195" style="fill:#cc6600;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Sixth book second shelf -->
+			<rect width="20" height="60" x="312" y="195" style="fill:#4da6ff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Seventh book second shelf -->
+			<rect width="17" height="60" x="332" y="195" style="fill:#004d99;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Eighth book second shelf -->
+			<rect width="20" height="60" x="349" y="195" style="fill:#cc6600;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Ninth book second shelf -->
+			<rect width="23" height="60" x="369" y="195" style="fill:#ffbb33;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Tenth book second shelf -->
+			<rect width="20" height="60" x="392" y="195" style="fill:#33ff77;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Eleventh book second shelf -->
+			<rect width="20" height="60" x="412" y="195" style="fill:#ffb31a;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Twelth book second shelf -->
+			<rect width="25" height="60" x="432" y="195" style="fill:#00802b;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Thirteenth book second shelf -->
+			<rect width="20" height="60" x="457" y="195" style="fill:#cc6600;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Fourteenth book second shelf -->
+			<rect width="13" height="60" x="477" y="195" style="fill:#6699ff;stroke-width:1;stroke:rgb(0,0,0)" />
+			
+
+			<!--Third Bookshelf Books-->
+			<!--First Book Third Shelf Left Side-->
+			<rect width="60" height="20" x="212" y="325" style="fill:#cc6600;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Second Book Third Shelf Left Side-->
+			<rect width="55" height="18" x="212" y="307" style="fill:#6699ff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Third Book Third Shelf Left Side-->
+			<rect width="45" height="18" x="212" y="289" style="fill:#805500;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--First Book Third Shelf Right Side -->
+			<rect width="60" height="20" x="429" y="325" style="fill:#ff5500;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Second Book Third Shelf Right Side-->
+			<rect width="55" height="18" x="434" y="307" style="fill:#e69900;stroke-width:1;stroke:rgb(0,0,0)" />
+			<rect width="55" height="18" x="434" y="289" style="fill:#6699ff;stroke-width:1;stroke:rgb(0,0,0)" />
+
+			
+
+
+
+			<!--Left Ripshog Logo-->
+			<!--Left Ripshog Torso-->
+			<!--I need to do the torso before the head so that the chin is over the chest and not vice versa, which is unsettling. -->
+			
+			<!--Shirt-->
+			<rect x="30" y="220" width="120" height="100" rx="15" ry="15" style="fill:#ff0000;stroke-width:1;stroke:rgb(0,0,0)"/>
+			<!--R logo-->
+			<rect x="70" y="260" width="15" height="50" style="fill:#ffffff"/>
+			<circle cx="85" cy="275" r="15" style="fill:#ffffff" />
+			<rect x="87" y="260" width="15" height="25" transform="rotate(-45,121,290)" style="fill:#ffffff"/>
+			<circle cx="85" cy="275" r="5" style="fill:black" />
+			
+
+			<!--Left Ripshog Head-->
+			<!--Left Ripshog Head Outline-->
+			<circle cx="90" cy="200" r="50" style="fill:#999999;stroke-width:1;stroke:rgb(0,0,0)" />
+			
+
+			<!--Left Ripshog Eyes-->
+			<!--Left Ripshog Left Eye-->
+			<!--Left Ripshog Left Eye Outline-->
+			<circle cx="70" cy="190" r="10" style="fill:#ffffff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Left Ripshog Left Eye Iris-->
+			<circle cx="70" cy="190" r="5" style="fill:#739900;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Left Ripshog Left Eye Pupil-->
+			<circle cx="70" cy="190" r="2" style="fill:#000000;stroke-width:1;stroke:rgb(0,0,0)" />
+
+			<!--Left Ripshog Center Eye Outline-->
+			<circle cx="90" cy="170" r="10" style="fill:#ffffff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Left Ripshog Center Eye Iris-->
+			<circle cx="90" cy="170" r="5" style="fill:#6699ff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Left Ripshog Center Eye Pupil-->
+			<circle cx="90" cy="170" r="2" style="fill:#000000;stroke-width:1;stroke:rgb(0,0,0)" />
+
+			<!--Left Ripshog Right Eye Outline-->
+			<circle cx="110" cy="190" r="10" style="fill:#ffffff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Left Ripshog Right Eye Iris-->
+			<circle cx="110" cy="190" r="5" style="fill:#739900;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Left Ripshog Right Eye Pupil-->
+			<circle cx="110" cy="190" r="2" style="fill:#000000;stroke-width:1;stroke:rgb(0,0,0)" />
+
+
+			<!--Left Ripshog Nose-->
+			<!--Left Ripshog Left Nostril-->
+			<ellipse cx="85" cy="205" rx="3" ry="5" transform="rotate(40, 85,205)" style="fill:yellow;stroke:purple;stroke-width:2" />
+			<!--Left Ripshog Right Nostril-->
+			<ellipse cx="95" cy="205" rx="3" ry="5" transform="rotate(-40, 95,205)" style="fill:yellow;stroke:purple;stroke-width:2" />
+
+			<!--Left Ripshog Mouth -->
+			<!--Left Ripshog Mouth Outline-->
+			<!-- <ellipse cx="90" cy="230" rx="30" ry="10" style="fill:aquamarine;stroke:purple;stroke-width:2" />
+			<ellipse cx="90" cy="230" rx="24" ry="6" style="fill:#000000;stroke:purple;stroke-width:2" /> -->
+			<clipPath id="cut-off-bottom">
+          		<rect x="83" y="220" width="70" height="30" />
+      		</clipPath>
+
+      		<circle cx="83" cy="220" r="25" clip-path="url(#cut-off-bottom)" />
+      		
+      		<!--Left Ripshog Antler -->
+      		<!--Stem-->
+			<line x1="90" y1="150" x2="90" y2="140" style="stroke:brown;stroke-width:2" />
+			<!--Left Branch-->
+			<line x1="90" y1="140" x2="80" y2="130" style="stroke:brown;stroke-width:2" />
+			<!--Right Branch-->
+			<line x1="90" y1="140" x2="100" y2="130" style="stroke:brown;stroke-width:2" />
+			<!--Antler Buds-->
+			<circle cx="80" cy="130" r="3" style="fill:#000000;" />
+			<circle cx="100" cy="130" r="3" style="fill:#000000;" />
+
+
+
+
+      		<!--Right Ripshog Logo-->
+      		<!--Right Ripshog Torso-->
+			<!--I need to do the torso before the head so that the chin is over the chest and not vice versa, which is unsettling. -->
+			
+			<!--Shirt-->
+			<rect x="550" y="220" width="120" height="100" rx="15" ry="15" style="fill:#ff0000;stroke-width:1;stroke:rgb(0,0,0)"/>
+			<!--R logo-->
+			<rect x="590" y="260" width="15" height="50" style="fill:#ffffff"/>
+			<circle cx="605" cy="275" r="15" style="fill:#ffffff" />
+			<rect x="607" y="260" width="15" height="25" transform="rotate(-45,642,290)" style="fill:#ffffff"/>
+			<circle cx="605" cy="275" r="5" style="fill:black" />
+			
+
+			<!--Right Ripshog Head-->
+			<!--Right Ripshog Head Outline-->
+			<circle cx="610" cy="200" r="50" style="fill:#999999;stroke-width:1;stroke:rgb(0,0,0)" />
+			
+
+			<!--Right Ripshog Eyes-->
+			<!--Right Ripshog Left Eye-->
+			<!--Right Ripshog Left Eye Outline-->
+			<circle cx="590" cy="190" r="10" style="fill:#ffffff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Right Ripshog Left Eye Iris-->
+			<circle cx="590" cy="190" r="5" style="fill:#739900;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Right Ripshog Left Eye Pupil-->
+			<circle cx="590" cy="190" r="2" style="fill:#000000;stroke-width:1;stroke:rgb(0,0,0)" />
+
+			<!--Right Ripshog Center Eye-->
+			<!--Right Ripshog Center Eye Outline-->
+			<circle cx="610" cy="170" r="10" style="fill:#ffffff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Right Ripshog Center Eye Iris-->
+			<circle cx="610" cy="170" r="5" style="fill:#6699ff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Right Ripshog Center Eye Pupil-->
+			<circle cx="610" cy="170" r="2" style="fill:#000000;stroke-width:1;stroke:rgb(0,0,0)" />
+
+			<!--Right Ripshog Right Eye-->
+			<!--Right Ripshog Right Eye Outline-->
+			<circle cx="630" cy="190" r="10" style="fill:#ffffff;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Right Ripshog Right Eye Iris-->
+			<circle cx="630" cy="190" r="5" style="fill:#739900;stroke-width:1;stroke:rgb(0,0,0)" />
+			<!--Right Ripshog Right Eye Pupil-->
+			<circle cx="630" cy="190" r="2" style="fill:#000000;stroke-width:1;stroke:rgb(0,0,0)" />
+
+
+			<!--Right Ripshog Nose-->
+			<!--Right Ripshog Left Nostril-->
+			<ellipse cx="605" cy="205" rx="3" ry="5" transform="rotate(40, 605,205)" style="fill:yellow;stroke:purple;stroke-width:2" />
+			<!--Right Ripshog Right Nostril-->
+			<ellipse cx="615" cy="205" rx="3" ry="5" transform="rotate(-40, 615,205)" style="fill:yellow;stroke:purple;stroke-width:2" />
+
+			<!--Right Ripshog Mouth -->
+			<!--Right Ripshog Mouth Outline-->
+			<clipPath id="cut-off-bottom2">
+          		<rect x="605" y="220" width="70" height="30" />
+      		</clipPath>
+
+      		<circle cx="605" cy="220" r="25" clip-path="url(#cut-off-bottom2)" />
+
+      		<!--Right Ripshog Antlers -->
+      		<!--Stem-->
+      		<line x1="610" y1="150" x2="610" y2="140" style="stroke:brown;stroke-width:2" />
+			<!--Left Branch-->
+			<line x1="610" y1="140" x2="600" y2="130" style="stroke:brown;stroke-width:2" />
+			<!--Right Branch-->
+			<line x1="610" y1="140" x2="620" y2="130" style="stroke:brown;stroke-width:2" />
+			<!--Antler Buds-->
+			<circle cx="600" cy="130" r="3" style="fill:#000000;" />
+			<circle cx="620" cy="130" r="3" style="fill:#000000;" />
+
+
+      		<!--Left Sign Up Button -->
+      		<!--I'm thinking green rectangular button with rounded corners with a nice google font saying Sign up-->
+      		<a href="signup.html"><rect x="30" y="360" width="120" height="50" rx="15" ry="15" style="fill:#8cff1a;stroke-width:1;stroke:rgb(0,0,0)"/>
+      			<text x="60" y="390"">Sign Up</text></a>
+
+      		<!--Left Sign In Button -->
+      		<!--I'm thinking green rectangular button with rounded corners with a nice google font saying Sign in-->
+      		<a href="signin.html"><rect x="30" y="420" width="120" height="50" rx="15" ry="15" style="fill:#8cff1a;stroke-width:1;stroke:rgb(0,0,0)"/>
+      			<text x="60" y="450"">Sign In</text></a>
+
+      		<!--Right User Content Submit Button-->
+      		<!--The button will check to make sure the user is signed in, if so, then the user will be asked which they would like to submit, a cyoa, a novel, or a short story. Each choice will link to a submission page. There will be an explanation of how the process works. After a user has submitted their work, it will need to be reviewed before it is posted. This process may take some time, as there is only one of me, so patience is appreciated. If it is a cyoa they are submitting, they also need to submit an outline, which should be shown by example. I'm pretty neat, and most people arent, so it should be fun. All stories that are submitted are open to edits if need be.  -->
+      		<a href="submit.html"><rect x="550" y="360" width="120" height="50" rx="15" ry="15" style="fill:#ffff66;stroke-width:1;stroke:rgb(0,0,0)"/>
+      			<text x="560" y="390">Submit a Story</text></a>
+
+
+      		<!--Donate Button (not sure where to put it)-->
+      		<!--create a patreon account/kickstarter and link a donation button to allow users to donate if they want, who knows some people just may.-->
+      		<a href="donate.html"><rect x="550" y="420" width="120" height="50" rx="15" ry="15" style="fill:#99ffff;stroke-width:1;stroke:rgb(0,0,0)"/>
+      			<text x="580" y="450"">Donate!</text></a>
+
+      		
+
+		</svg>
+
+	</div>
+<footer>
+	<p>&copy; 2017 RipshogPublishingGroup.com<p>
+</footer>
+</body>
+</html>
